@@ -1,2 +1,2 @@
-import Http from '@/utils/http'
+import Http from '@s/utils/http'
 
