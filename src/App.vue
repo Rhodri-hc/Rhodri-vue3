@@ -24,4 +24,5 @@ export default defineComponent({
 </script>
 
 <style>
+@import '@s/theme/base.css';
 </style>

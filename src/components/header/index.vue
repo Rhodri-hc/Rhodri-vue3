@@ -7,11 +7,11 @@
 
             <div className="flex mr-1 sm:mr-1 md:mr-4 text-xs sm:text-sm  md:text-base">
             <div className="flex flex-col mr-3 sm:mr-3 md:mr-6 px-1  py-2 cursor-pointer hover:bg-opacity-25 hover:bg-gray-300 ">
-                <p class="TitleNav">文章</p>
+                <p className="titleNav">文章</p>
                 <span className="text-red-800">ARTICLE</span>
             </div>
             <div className="flex flex-col mr-3 sm:mr-3 md:mr-6 px-1  py-2 cursor-pointer hover:bg-opacity-25 hover:bg-gray-300">
-                <p class="TitleNav">關於</p>
+                <p className="titleNav">關於</p>
                 <span className="text-red-800">ABOUT</span>
             </div>
             </div>
@@ -30,5 +30,4 @@ export default defineComponent({
 </script>
 
 <style scoped >
-@import '../../theme/base.css';
 </style>

@@ -1,7 +1,7 @@
 <template>
    <div className="relative pt-14">
         <div className="w-11/12 sm:w-11/12 md:w-9/12 lg:w-8/12 xl:w-7/12 my-0 mx-auto">
-            <h3 class="titleBlock">文章</h3>
+            <h3 className="titleBlock">文章</h3>
 
             <div className="flex flex-col items-center mt-10 lg:mt-16">
                 <div className="flex rounded-lg overflow-hidden  h-48 lg:h-56  w-full  md:w-10/12 lg:w-9/12 shadow-lg  cursor-pointer transform hover:-translate-y-1 hover:scale-105 transition duration-700 ease-in-out">
@@ -32,6 +32,5 @@ export default defineComponent({
 </script>
 
 <style scoped >
-@import '../../theme/base.css';
 @import "./index.css";
 </style>
