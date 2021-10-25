@@ -2,7 +2,7 @@
   "name": "init",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite --host",
+    "dev": "vite --host &&  TAILWIND_MODE=watch postcss -i tailwind.css -o build.css --watch",
     "build": "vue-tsc --noEmit && vite build",
     "serve": "vite preview"
   },

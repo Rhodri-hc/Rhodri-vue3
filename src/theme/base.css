@@ -23,3 +23,7 @@
 .titleNav {
     text-align-last: justify;
 }
+
+.articleContent{
+    min-height: 30rem;
+}

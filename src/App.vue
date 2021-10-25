@@ -1,12 +1,12 @@
 <template>
-  <div className="font-sans flex flex-col justify-between h-screen">
-    <Header></Header>
+  <div class="font-sans flex flex-col justify-between h-screen">
+    <Header @changeRoute="changeRoute"></Header>
     <router-view v-slot="{ Component }">
       <keep-alive>
         <component :is="Component" />
       </keep-alive>
     </router-view>
-    <Footer className="mt-auto text-center flex-shrink-0"></Footer>
+    <Footer class="mt-auto text-center flex-shrink-0"></Footer>
   </div>
 </template>
 
@@ -15,6 +15,7 @@
 import Header from "@s/components/header/index.vue"
 import Footer from "@s/components/footer/index.vue"
 import { defineComponent } from "vue";
+import { useRouter } from 'vue-router'
 
 export default defineComponent({
   components:{
@@ -22,7 +23,16 @@ export default defineComponent({
     Footer
   },
   setup() {
-    return {};
+    let router = useRouter();
+
+    // 点击标签切换路由
+    function changeRoute(name:string){
+      router.push({path: `/${name}` })
+    }
+
+    return {
+      changeRoute
+    };
   },
 });
 </script>

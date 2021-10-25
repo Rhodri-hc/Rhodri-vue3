@@ -1,11 +1,11 @@
 <template>
-    <div className="pt-15 pb-5 flex flex-col items-center text-sm opacity-75 ">
-        <div className="relative inline-flex justify-center">
-            <span className="pr-2">Crafted With</span>
-            <i className="createrHeart" /> 
-            <span className="pl-2">BY Rhodri</span>
+    <div class="pt-15 pb-5 flex flex-col items-center text-sm opacity-75 ">
+        <div class="relative inline-flex justify-center">
+            <span class="pr-2">Crafted With</span>
+            <i class="createrHeart" /> 
+            <span class="pl-2">BY Rhodri</span>
         </div>
-        <h5 className="pt-1 pl-4">2021.01 - {{getNowYearMonth()}} </h5>
+        <h5 class="pt-1 pl-4">2021.01 - {{getNowYearMonth()}} </h5>
     </div>
 </template>
 <script lang="ts">
