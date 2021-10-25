@@ -1,6 +1,7 @@
 <template>
   <div class="font-sans flex flex-col justify-between h-screen">
     <Header @changeRoute="changeRoute"></Header>
+    <Drager></Drager>
     <router-view v-slot="{ Component }">
       <keep-alive>
         <component :is="Component" />
@@ -14,13 +15,15 @@
 
 import Header from "@s/components/header/index.vue"
 import Footer from "@s/components/footer/index.vue"
+import Drager from "@s/components/Drager/index.vue"
 import { defineComponent } from "vue";
 import { useRouter } from 'vue-router'
 
 export default defineComponent({
   components:{
     Header,
-    Footer
+    Footer,
+    Drager
   },
   setup() {
     let router = useRouter();
